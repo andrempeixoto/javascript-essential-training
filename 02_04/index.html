@@ -9,3 +9,20 @@
   </head>
   <body></body>
 </html>
+
+<!-- Working with modules, backpack.js's content is imported into script.js, so it's content isn't accessible via the page context, but only within the context in which it is imported into: script.js. -->
+
+<!-- When does the browser execute JavaScript?
+  By default: When the script is encountered. 
+  If the script is set to "async", when the script is fully loaded. 
+    -> <script src="javascript.js" async></script>
+  If the script is set to "defer", when the entire HTML page is rendered.
+    -> <script src="javascript.js" defer></script>
+** When using the type="module", it is automatically loaded as if set to "defer"
+
+What happens when you defer JavaScript?
+  The browser loads the JavaScript asynchronously when it is encountered, then waits until all HTML is rendered before executing the script.
+
+JavaScript modules are heavily used in frameworks like React and Vue. What is the advantage of using modules?
+  Modules enable modularization of code where individual functions, components, data objects, and other parts can be separated into individual files.
+-->
